@@ -13,6 +13,19 @@ export const getPosts = () => async (dispatch) => {
   }
 };
 
+export const getPost = (data) => (dispatch) => {
+  try {
+    // console.log(data);
+    // console.log(data);
+    dispatch({
+      type: "GET_POST",
+      payload: data,
+    });
+  } catch (error) {
+    console.log(error.message);
+  }
+};
+
 export const getUsers = () => async (dispatch) => {
   try {
     const { data } = await api.fetchUsers();

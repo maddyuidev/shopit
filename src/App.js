@@ -14,7 +14,7 @@ const App = () => {
     <div className="App">
       <h3>Implementing Redux thunk</h3>
       <Users />
-      {/* <ListUsers /> */}
+      <ListUsers />
       <Posts />
     </div>
   );
